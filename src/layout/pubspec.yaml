@@ -1,5 +1,5 @@
-name: arrugas_domain
-description: Dominio de la applicación de arrugas
+name: arrugas_layout
+description: Cambio de layouts de la applicación de arrugas
 
 publish_to: "none"
 

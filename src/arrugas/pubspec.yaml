@@ -23,6 +23,11 @@ dependencies:
       url: git@github.com/unirtfe/unirtfe.github.io.git
       path: src/domain
       ref: main
+  arrugas_layout:
+    git:
+      url: git@github.com/unirtfe/unirtfe.github.io.git
+      path: src/layout
+      ref: main
 
 dev_dependencies:
   flutter_test:

@@ -1,7 +1,7 @@
-import 'screen_size_support.dart';
-export 'package:arrugas/common/screen_size_support.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
+
+import 'screen_size_support.dart';
 
 mixin LayoutRules {
   ScreenSizeSupport obtainLayoutJumps({required MediaQueryData mediaQuery}) {

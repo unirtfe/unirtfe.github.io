@@ -1,10 +1,11 @@
 import 'package:arrugas_domain/episodes/episodes.dart';
+import 'package:arrugas_layout/layout_rules.dart';
+import 'package:arrugas_layout/screen_size_support.dart';
 import 'package:flutter/services.dart';
 
 import '../common/arrugas_sounds.dart';
 import "../common/extensions/episodes_extension.dart";
 
-import '../common/layout_rules.dart';
 import '../common/music/arrugas_background_music.dart';
 import '../common/music/sfx_music.dart';
 import '../episodes/episodes.dart';
