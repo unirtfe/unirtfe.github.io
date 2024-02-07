@@ -12,4 +12,7 @@ rm -rf version.json
 
 cd src/arrugas
 flutter build web --release
+mv -v build/web/* ../../../
 
+flutter build apk --release
+flutter build appbundle --release
