@@ -1,0 +1,38 @@
+name: melos_rack
+
+repository:
+  type: "github"
+  origin: "https://github.com/unirtfe/unirtfe.github.io"
+  owner: "Mithos5r"
+  name: "unirtfe.github.io"
+
+packages:
+  - src/*
+
+command:
+  version:
+    # Only allow versioning to happen on main branch.
+    branch: main
+    # Generate commit links in package changelogs.
+    linkToCommits: true
+    updateGitTagRefs: true
+    # Additionally build a changelog at the root of the workspace.
+    workspaceChangelog: true
+
+  bootstrap:
+    runPubGetInParallel: false
+
+scripts:
+  pub_upgrade:
+    run: melos exec -c 1 -- "flutter pub upgrade"
+  generate:
+    run: \$MELOS_ROOT_PATH/melos_scripts/generate.sh
+    description: Change generate build runner
+    exec:
+      concurrency: 1
+      orderDependents: true
+    packageFilters:
+      dependsOn:
+        - build_runner
+      noDependsOn:
+        - envied_generator

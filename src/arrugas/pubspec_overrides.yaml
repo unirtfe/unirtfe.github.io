@@ -1,0 +1,4 @@
+# melos_managed_dependency_overrides: arrugas_domain
+dependency_overrides:
+  arrugas_domain:
+    path: ../domain
