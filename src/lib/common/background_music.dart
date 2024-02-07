@@ -5,6 +5,7 @@ enum BackgroundMusic {
   mainTheme(volume: 0.01),
   animate(volume: 0.01),
   christmas(volume: 0.01),
+  hope(volume: 0.1),
   defaultEpisode(volume: 0.01);
 
   const BackgroundMusic({
@@ -14,10 +15,11 @@ enum BackgroundMusic {
 
   String toMusicPath() {
     final path = switch (this) {
-      BackgroundMusic.mainTheme => Assets.audio.music.pianoMoment,
-      BackgroundMusic.animate => Assets.audio.music.lazyAfternoon,
-      BackgroundMusic.christmas => Assets.audio.music.christmasStars,
-      BackgroundMusic.defaultEpisode => Assets.audio.music.relaxedWalk113607,
+      mainTheme => Assets.audio.music.pianoMoment,
+      animate => Assets.audio.music.lazyAfternoon,
+      christmas => Assets.audio.music.christmasStars,
+      defaultEpisode => Assets.audio.music.relaxedWalk113607,
+      hope => Assets.audio.music.soundsOfHope
     };
 
     return path.audioPath;
