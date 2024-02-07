@@ -6,4 +6,7 @@ ArrugasChapterRouter _initializeEpisode8() => ArrugasChapterRouter(
       maximumImageAvailables: 25,
       onChapterEnd: continueDialog,
       backgroundMusic: BackgroundMusic.christmas,
+      musicChangeSteps: {
+        23: () => Future.value(BackgroundMusic.defaultEpisode),
+      },
     );

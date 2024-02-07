@@ -5,4 +5,7 @@ ArrugasChapterRouter _initializeEpisode9() => ArrugasChapterRouter(
       imagePath: Assets.images.episodes.episode9.episode9View1.path,
       maximumImageAvailables: 40,
       onChapterEnd: continueDialog,
+      musicChangeSteps: {
+        32: () => Future.value(BackgroundMusic.hope),
+      },
     );
