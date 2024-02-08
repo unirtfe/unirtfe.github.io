@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'hub/generic_episode.dart';
+import 'hub/episode/episode_view.dart';
+
 import 'hub/main_screen.dart';
 
 void main() {
@@ -11,8 +12,12 @@ void main() {
         'Main': (context) => const Material(
               child: MainScreen(),
             ),
+        // 'episode': (context) => const Material(
+        //       child: GenericEpisode(),
+        //     ),
+
         'episode': (context) => const Material(
-              child: GenericEpisode(),
+              child: EpisodeView(),
             ),
       },
     ),
