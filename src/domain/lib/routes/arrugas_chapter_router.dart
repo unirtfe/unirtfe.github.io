@@ -19,7 +19,7 @@ final class ArrugasChapterRouter {
   final String imagePath;
   final MusicDefine backgroundMusic;
   final int maximumImageAvailables;
-  final Function(BuildContext context, int nextEpisode) onChapterEnd;
+  final Future Function(BuildContext context, int nextEpisode) onChapterEnd;
   final Map<int, Future<void> Function(BuildContext context)>
       stepGameTransition;
 
